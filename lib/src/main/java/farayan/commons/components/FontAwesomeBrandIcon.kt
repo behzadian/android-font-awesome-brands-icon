@@ -21,7 +21,6 @@ class FontAwesomeBrandIcon : FixedResourceFontTextView {
         try {
             val textCode = typedArray.getInt(R.styleable.FontAwesomeBrandIcon_Brand, 0);
             text = textCode.toChar().toString();
-            typeface = theFont(context, typefaceResID())
         } finally {
             typedArray.recycle();
         }
